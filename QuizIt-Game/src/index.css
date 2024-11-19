@@ -45,8 +45,59 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
   }
   
+  .floating-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Modak", sans-serif;
+    font-size: 1.5rem; /* Font size for text inside the cloud */
+    padding: 1rem 1rem; /* Padding for content */
+    background-color: #ff6ec7; /* Soft pink color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 20px; /* Smooth rectangle corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center; /* Center-align text */
+    transition: transform 0.5s ease-in-out; /* Smooth animation for size changes */
+    animation: float 6s infinite ease-in-out; /* Gently floating effect */
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-4px); /* Slight upward motion */
+    }
+    50% {
+        transform: translateY(4px); /* Slight downward motion */
+    }
+}
+
+
   
-  
+
+.bubbly-buttonq {
+  font-family: "Modak", sans-serif;
+  font-size: 2rem; /* Increase font size */
+  padding: 1rem 2rem; /* Increase padding for a larger button */
+  background-color: #e000fe; /* Soft pink color */
+  color: #ffffff;
+  border: none;
+  border-radius: 60px; /* Increase border radius to keep it rounded */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.bubbly-buttonq:hover {
+  transform: scale(1.1); /* Slightly larger scale on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.bubbly-buttonq:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
+}
   
   
   
