@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import AnimatedGif from './components/animatedGif';
+import Login from './pages/Login';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Quiz from './pages/Quiz';
+import Score from './pages/Score';
 
 
 function App() {
-
-
   return (
-    <>
-      <div className='bg-slate-50'>
 
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element ={<Login/>}></Route>
+        <Route path="/Quiz" element={<Quiz/>}></Route>
+        <Route path='/Score' element={<Score/>}> </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
