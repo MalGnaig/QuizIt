@@ -41,7 +41,7 @@ export default function Quiz() {
                 } else {
                     navigate('/Score', { state: { Score } });
                 }
-            }, 3000); // 2-second delay for popup
+            }, 2000); // 2-second delay for popup
 
             return () => clearTimeout(timer); // Cleanup timeout
         }
