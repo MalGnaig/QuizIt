@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import AnimatedGif from '../components/animatedGif';
 import Category from './Category';
+import Users from './Users';
 
 export default function Login() {
   const [startClicked, setStartClicked] = useState(false);
@@ -45,10 +46,18 @@ export default function Login() {
         {/* Add ref to Category component for scrolling */}
         {startClicked && (
           <div ref={categoryRef} className="w-full min-h-screen pt-20">
+            <Users/>
             <Category startClicked={startClicked} />
+
           </div>
         )}
+
+
+
+
       </div>
+
+
     </div>
   );
 }
