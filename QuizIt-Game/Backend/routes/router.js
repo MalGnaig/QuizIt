@@ -5,21 +5,21 @@ const router = express.Router();
 router.get('/users', (req, res) => {
     const userData = [
         {
-            username: "TriviaMaster123",
+            username: "SarahBraddickIsaLoser",
             highestScore: 1200,
             gamesPlayed: 10,
             favoriteCategory: "Science",
             achievements: ["First Win", "10 Correct Streak"]
         },
         {
-            username: "QuizQueen",
+            username: "BraddickisGay",
             highestScore: 1500,
             gamesPlayed: 15,
             favoriteCategory: "History",
             achievements: ["All Categories Completed", "Perfect Score"]
         },
         {
-            username: "Brainiac99",
+            username: "IHateSarah",
             highestScore: 1800,
             gamesPlayed: 20,
             favoriteCategory: "PopCulture",
