@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const schemas = require("./models/schemas");
 
 // Define sample user data
 router.get("/users", (req, res) => {
@@ -31,5 +32,6 @@ router.get("/users", (req, res) => {
   res.json(userData);
 });
 
-//router.post();
+router.post();
+
 module.exports = router;
