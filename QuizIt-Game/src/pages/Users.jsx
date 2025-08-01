@@ -32,6 +32,10 @@ export default function Users() {
     setShowNewOrExistingButtons(false); // Hide buttons
   };
 
+  const submitNewUser = (newUserName) => {
+    newUserName.preventDefault();
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-l from-purple-500 to-violet-800 text-white text-sm sm:text-base pt-20">
       {showNewOrExistingButtons && (
@@ -59,7 +63,12 @@ export default function Users() {
           </h2>
 
           <div className="containerCenterDivinDiv">
-            <textarea className="modak-regular mb-4 text-black text-[26px] resize-none text-center"></textarea>
+            <textarea
+              className="modak-regular mb-4 text-black text-[26px] resize-none text-center"
+              onChange={(e) => setnewUser(e.target.value)}
+            ></textarea>
+
+            <button className="bubbly-button w-40 mx-auto mb-6"> Submit</button>
           </div>
         </>
       )}
